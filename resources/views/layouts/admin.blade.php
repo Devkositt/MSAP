@@ -1,0 +1,2 @@
+@extends('layouts.app')
+@section('content')<div class="mb-7 flex flex-wrap items-center gap-4 rounded bg-slate-800 p-4 text-sm text-white"><a href="{{ route('admin.dashboard') }}" class="font-bold">Dashboard</a><a href="{{ route('admin.pets.index') }}">တိရစ္ဆာန်များ</a><a href="{{ route('admin.donations.index') }}">လှူဒါန်းမှုများ</a><a href="{{ route('admin.expenses.index') }}">အသုံးစရိတ်များ</a><form class="ml-auto" method="POST" action="{{ route('admin.logout') }}">@csrf<button>ထွက်ရန်</button></form></div>@yield('admin-content')@endsection
